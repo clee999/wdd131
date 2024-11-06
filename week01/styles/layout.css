@@ -2,6 +2,8 @@
 .body {
 
      display: grid;
+     display: flex;
+     
      grid-template:
      "header header header"
      "nav main aside"
@@ -15,8 +17,8 @@
 nav {
 
      background: rgb(105, 157, 246);
-     padding: 0 rem;
-     grid-column: 1 / 4;
+     padding: 1rem;
+     grid-column: 1 /4;
         
 
 }
@@ -27,7 +29,7 @@ ul {
 
 li {
      display: inline;
-     padding: 1rem;
+     padding: 13px
 }
 
 
@@ -42,8 +44,9 @@ li a {
 
 header {
      background: lightpink;
-     padding: 1rem;
+
      grid-column: 1/ 4;
+
 
 
    }
@@ -51,7 +54,7 @@ header {
 main {
      background: coral;
      padding: 50%;
-     grid-column: 1/3;
+     grid-column: 1 / 3;
 
 
     
