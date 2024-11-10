@@ -2,7 +2,7 @@
 .body {
 
      display: grid;
-     display: flex;
+     /* display: flex;*/
      
      grid-template:
      "header header header"
@@ -19,6 +19,7 @@ nav {
      background: rgb(105, 157, 246);
      padding: 1rem;
      grid-column: 1 /4;
+     
         
 
 }
