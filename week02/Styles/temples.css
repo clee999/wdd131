@@ -1,0 +1,144 @@
+body {
+     margin: 0;
+     font-family: Arial, sans-serif;
+     background-color: #fff;
+     color: #000;
+     transition: background-color 0.3s, color 0.3s;
+ }
+ 
+ header {
+     display: flex;
+     align-items: center;
+     background-color: #9370DB;
+     color: white;
+     padding: 1rem;
+     justify-content: space-between;
+     top: 0;
+     
+ }
+
+ header h1 {
+
+     margin: 0;
+     font-size: 1.5rem;
+ }
+
+ main h1 {
+
+     margin: 1rem;
+     font-size: 1.5rem;
+     text-align: center;
+ }
+
+ nav ul {
+     list-style: none;
+     display: flex;
+     gap: 3rem;
+     margin: 0;
+     padding: 0;
+     
+ }
+
+ nav ul li a{
+     text-decoration: none;
+     color: white;
+     font-size: 1rem;
+ }
+
+ nav ul li a:hover {
+     color: #ddd;
+ }
+
+ 
+ #menu {
+     display: none;
+     background: none;
+     border: none;
+     color: white;
+     font-size: 1.5rem;
+     cursor: pointer;
+     margin-left: 21rem;
+
+ }
+
+ .gallery{
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+     gap: 1rem;
+ }
+
+ figure {
+     
+     /*border: 1px solid #ddd;*/
+     /*border-radius: 5px;*/
+     overflow: hidden;
+     text-align: center;
+ }
+
+
+ figure img {
+
+     width: 100%;
+     height: auto;
+ }
+ figcaption {
+     color: #4B0082; /* Make the caption text color */
+     padding: 0.5rem; /* Space arpund the text */
+
+ }
+
+ footer {
+     background-color: #4B0082;
+     color: white;
+     padding: 1rem;
+     text-align: center;
+     margin-top: 2rem;
+     font-size: 0.9rem;
+ }
+ 
+ footer p {
+     margin: 0.3rem 0;
+ }
+
+
+ /* Responsive Navigation */
+
+
+ @media(max-width: 768px) {
+
+     .navigation{
+               display: none; /* Hide the menu by default */
+               flex-direction: column; /* Stack items vertically */
+               align-items: flex-start; /* Align menu items to the left */
+               background-color: #9370DB; /* Match header background */
+               padding: 1rem; /* Add padding for spacing */
+               position: absolute; /* Position menu below header */
+               top:10%; /* Place menu below the header */
+               left: 0; /* Align to the left edge */
+               width: 100%; /* Full width dropdown menu */
+               z-index: 1000; /* Ensure the menu is on top of other elements */
+               border-radius: 0 0 5px 5px; /* Optional: Rounded bottom corners */
+           
+     }
+
+
+     nav ul {
+               display: none;
+               flex-direction: column;
+               background-color: #4B0082;
+               position: absolute;
+               right: 0;
+               width: 100%;
+               padding: 1rem;
+               border-radius: 5px;
+          }
+
+          nav ul.show {
+               display: flex;
+           }
+
+          #menu {
+               display: block;
+          }
+
+     }
