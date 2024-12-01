@@ -1,103 +1,112 @@
 <!doctype html>
 <html lang="en-US">
-<head>
-  <!-- Meta Charset -->
-  <meta charset="utf-8">
-  
-  <!-- Meta Viewport -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- Title -->
-  <title>Lefkada, Greece</title>
-  
-  <!-- Meta Description -->
-  <meta name="description" content="a website that tells you the factual Infomation About lefkada, Greece.">
-  
-  <!-- Meta Author -->
-  <meta name="author" content="Carl">
-  <script src="scripts/place.js" defer></script>
+  <head>
+    <!-- Meta Charset -->
+    <meta charset="utf-8">
+    
+    <!-- Meta Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Title -->
+    <title>Lefkada, Greece</title>
+    
+    <!-- Meta Description -->
+    <meta name="description" content="a website that tells you the factual Infomation About lefkada, Greece.">
+    
+    <!-- Meta Author -->
+    <meta name="author" content="Carl Lee">
+    <script src="scripts/place.js" defer></script>
 
-  <link rel="stylesheet" href="styles/place.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Lefkada, Greece</h1>
+    </header>
+    <div class="wrap">
+      <main>
+        <!-- Desktop Layout -->
+        <div class="desktop-layout container">
 
+          <picture class="main-image section">
+            <source srcset="images/Lefkada-large.webp" media="(max-width: 500px)">
+            <source srcset="images/Lefkada-large.webp" media="(min-width: 501px)">
+            <img src="images/Lefkada-large.jpg" alt="Background Image">
+          </picture>
+        
+          <div class="general-data section">
+            <div class="data-header">
+              <h1>Data</h1> 
+              <object data="images/flag_greece_country_world_icon.svg" width="35" height="35"> </object>
+            </div>
+            <p><strong>Area:</strong> 325 km²</p>
+            <p><strong>Population:</strong> 22,652</p>
+            <p><strong>Town:</strong> Lefkada</p>
+            <p><strong>Languages:</strong> Greek</p>
+            <p><strong>Currency:</strong> Euro (€)</p>
+            <p><strong>Time zone:</strong> EET (UTC+2)</p>
+            <p><strong>Calling Code:</strong> +30</p>
+            <p><strong>Internet TLD:</strong> .gr</p>
+          </div>
+          <div class="weather-section">
 
+            <div class="weather-header">
+              <h1>Weather</h1> 
+              <object data="images/weather_day_sun_icon.svg" width="40" height="40"> </object>
+            </div>
+            <p>Temperature: <span id="temperature-desktop">10</span>°C</p>
+            <p>Conditions: Partly Cloudy</p>
+            <p>Wind: <span id="windSpeed-desktop">5</span> km/h</p>
+            <p>Wind Chill: <span id="windChill-desktop">--</span>°C</p>
+          </div>
 
-</head>
-<body>
-  <div class="wrap">
-  <header>
-    <h1 class="title">Lefkada, Greece</h1>
-  </header>
-  <div class="wrap">
-    <main>
-       <!-- Desktop Layout -->
-      <div class="desktop-layout container">
-
-        <picture class="main-image section">
-          <source srcset="images/Desktop.jpg" media="(max-width: 500px)">
-          <source srcset="images/Desktop.jpg" media="(min-width: 501px)">
-          <img src="images/Desktop.jpg" alt="Background Image">
-        </picture>
-      
-        <div class="general-data section">
-          <h2>Data</h2>
-          <p>Area: Value</p>
-          <p>Population: Value</p>
-          <p>Town: Value</p>
-          <p>Languages: Value</p>
-          <p>Currency: Value</p>
-          <p>Time zone: Value</p>
-          <p>Calling Code: Value</p>
-          <p>Internet TLD: Value</p>
         </div>
-        <div class="weather-section">
-          <h3>Weather Section</h3>
-          <p>Temperature: <span id="temperature-desktop">10</span>°C</p>
-          <p>Conditions: Partly Cloudy</p>
-          <p>Wind: <span id="windSpeed-desktop">5</span> km/h</p>
-          <p>Wind Chill: <span id="windChill-desktop">--</span>°C</p>
-        </div>
+        <!-- Mobile Layout -->
+        <div class="mobile-layout">
+          <picture class="main-image-mobile">
+            <source srcset="images/moblie-Lefkada-Large.webp" type="image/webp" media="(max-width: 768px)">
+            <source srcset="images/moblie-Lefkada-Large.webp" type="image/webp" media="(min-width: 769px)">
+            <img src="images/moblie-view.jpg" alt="Beaches of Lefkada">
+          </picture>
 
-      </div>
-      <!-- Mobile Layout -->
-      <div class="mobile-layout">
-        <picture class="main-image-mobile">
-          <source srcset="" type="image/webp" media="(max-width: 768px)">
-          <source srcset="" type="image/webp" media="(min-width: 769px)">
-          <img src="images/moblie-view.jpg" alt="Beaches of Lefkada">
-        </picture>
+          <!-- Data Section -->
+          <section class="general-data">
+            <div class="data-header">
+              <h1>Data</h1> 
+              <object data="images/flag_greece_country_world_icon.svg" width="35" height="35"> </object>
+            </div>
+            <p><strong>Area:</strong> 325 km²</p>
+            <p><strong>Population:</strong> 22,652</p>
+            <p><strong>Town:</strong> Lefkada</p>
+            <p><strong>Languages:</strong> Greek</p>
+            <p><strong>Currency:</strong> Euro (€)</p>
+            <p><strong>Time zone:</strong> EET (UTC+2)</p>
+            <p><strong>Calling Code:</strong> +30</p>
+            <p><strong>Internet TLD:</strong> .gr</p>
+          </section>
 
-        <!-- Data Section -->
-        <section class="general-data">
-          <h2>Data</h2>
-          <p>Area: Value</p>
-          <p>Population: Value</p>
-          <p>Town: Value</p>
-          <p>Languages: Value</p>
-          <p>Currency: Value</p>
-          <p>Time zone: Value</p>
-          <p>Calling Code: Value</p>
-          <p>Internet TLD: Value</p>
-        </section>
-
-        <!-- Weather Section -->
-        <section class="weather-section">
-            <h2>Weather Section</h2>
+          <!-- Weather Section -->
+          <section class="weather-section">
+            <div class="weather-header">
+              <h1>Weather</h1> 
+              <object data="images/weather_day_sun_icon.svg" width="40" height="40"> </object>
+            </div>
             <p>Temperature: <span id="temperature">10</span>°C</p>
             <p>Conditions: Partly Cloudy</p>
             <p>Wind: <span id="windSpeed">5</span> km/h</p>
             <p>Wind Chill: <span id="windChill">--</span>°C</p>
-        </section>
-      </div>
-    </main>
-  </div>
-  <footer>
-    <p>&copy; <span id="currentyear"></span> Carl Lee - United Kingdom</p>
-    <p id="lastModified"></p>
-  </footer>
+          </section>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <p>&copy; <span id="currentyear"></span> Carl Lee - United Kingdom</p>
+      <p id="lastModified"></p>
+    </footer>
 
-</body>
+  </body>
 </html>

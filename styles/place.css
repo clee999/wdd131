@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
+
+
 body {
      margin: 0;
      font-family: Arial, sans-serif;
@@ -66,6 +70,42 @@ body {
   
  }
 
+ .weather-header {
+    display: flex; /* Use flexbox to align items in a row */
+    align-items: center; /* Align items vertically in the center */
+    background-color:#35c5ed; 
+    padding: 10px; /* Add some padding for spacing */
+    border-radius: 5px; /* Optional: add rounded corners */
+}
+
+.weather-header h1 {
+    margin: 0; /* Remove margin for consistent alignment */
+    margin-right: 10px; /* Add spacing between the text and the icon */
+    font-size: 1.5rem; /* Adjust the font size if needed */
+}
+
+.weather-header object {
+    flex-shrink: 0; /* Prevent the icon from shrinking */
+}
+
+.data-header {
+    display: flex; /* Use flexbox to align items in a row */
+    align-items: center; /* Align items vertically in the center */
+    background-color:#35c5ed; 
+    padding: 10px; /* Add some padding for spacing */
+    border-radius: 5px; /* Optional: add rounded corners */
+}
+
+.data-header h1 {
+    margin: 0; /* Remove margin for consistent alignment */
+    margin-right: 10px; /* Add spacing between the text and the icon */
+    font-size: 1.5rem; /* Adjust the font size if needed */
+}
+
+.data-header object {
+    flex-shrink: 0; /* Prevent the icon from shrinking */
+}
+
 
  .general-data, .weather-section {
      padding: 20px;
@@ -87,7 +127,6 @@ body {
 
  @media (min-width: 769px) {
      .weather-section::after {
-         content: "☀️";
          font-size: 24px;
          margin-left: 10px;
      }
