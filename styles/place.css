@@ -1,6 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
-
+:root {
+    --primary-bg-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    --footer-bg-color: #333; /* Dark grey */
+    --primary-text-color: #000; /* Black */
+    --footer-text-color: #fff; /* White */
+}
 
 body {
      margin: 0;
@@ -20,7 +25,7 @@ body {
      align-items: center;
      background-color: #34b9de;
      color: white;
-     padding:1rem;
+     padding:0.5rem;
      top: 0;
      
  }
@@ -37,7 +42,7 @@ body {
  }
  .title {
      text-align: center;
-     font-size: 24px;
+     font-size: 50px;
      font-weight: bold;
      margin-bottom: 20px;
  }
@@ -75,13 +80,14 @@ body {
     align-items: center; /* Align items vertically in the center */
     background-color:#35c5ed; 
     padding: 10px; /* Add some padding for spacing */
-    border-radius: 5px; /* Optional: add rounded corners */
+    border-radius: 5px;
 }
 
 .weather-header h1 {
     margin: 0; /* Remove margin for consistent alignment */
-    margin-right: 10px; /* Add spacing between the text and the icon */
-    font-size: 1.5rem; /* Adjust the font size if needed */
+    margin-right: 10px; /* this adds spacing between the text and the icon */
+    font-size: 1.5rem; 
+    color: white;
 }
 
 .weather-header object {
@@ -93,13 +99,15 @@ body {
     align-items: center; /* Align items vertically in the center */
     background-color:#35c5ed; 
     padding: 10px; /* Add some padding for spacing */
-    border-radius: 5px; /* Optional: add rounded corners */
+    border-radius: 5px;
+     
 }
 
 .data-header h1 {
     margin: 0; /* Remove margin for consistent alignment */
     margin-right: 10px; /* Add spacing between the text and the icon */
-    font-size: 1.5rem; /* Adjust the font size if needed */
+    font-size: 1.5rem; 
+    color: white;
 }
 
 .data-header object {
