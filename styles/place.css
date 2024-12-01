@@ -87,7 +87,7 @@ body {
     margin: 0; /* Remove margin for consistent alignment */
     margin-right: 10px; /* this adds spacing between the text and the icon */
     font-size: 1.5rem; 
-    color: var(--primary-text-color)
+    color: var(--primary-text-color);
 }
 
 .weather-header object {
@@ -107,7 +107,7 @@ body {
     margin: 0; /* Remove margin for consistent alignment */
     margin-right: 10px; /* Add spacing between the text and the icon */
     font-size: 1.5rem; 
-    color: var(--primary-text-color)
+    color: var(--primary-text-color);
 }
 
 .data-header object {
