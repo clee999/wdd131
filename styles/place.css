@@ -1,16 +1,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
 :root {
-    --primary-bg-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
-    --footer-bg-color: #333; /* Dark grey */
-    --primary-text-color: #000; /* Black */
-    --footer-text-color: #fff; /* White */
+    --primary-bg-color: #d6f2fa; 
+    --footer-bg-color:#34b9de; 
+    --primary-text-color: white; 
+    --footer-text-color: #fff; 
 }
 
 body {
      margin: 0;
      font-family: Arial, sans-serif;
-     background-color: #d6f2fa;
+     background-color: var(--primary-bg-color);
      display: flex;
      flex-direction: column;
      min-height: 100vh;
@@ -87,7 +87,7 @@ body {
     margin: 0; /* Remove margin for consistent alignment */
     margin-right: 10px; /* this adds spacing between the text and the icon */
     font-size: 1.5rem; 
-    color: white;
+    color: var(--primary-text-color)
 }
 
 .weather-header object {
@@ -107,7 +107,7 @@ body {
     margin: 0; /* Remove margin for consistent alignment */
     margin-right: 10px; /* Add spacing between the text and the icon */
     font-size: 1.5rem; 
-    color: white;
+    color: var(--primary-text-color)
 }
 
 .data-header object {
@@ -120,8 +120,8 @@ body {
      background-color: #f9f9f9;
  }
  footer {
-     background-color: #34b9de;
-     color: white;
+    background-color: var(--footer-bg-color);
+     color: var(--footer-text-color);
      padding: 1rem;
      text-align: center;
      margin-top: 6.25rem;
