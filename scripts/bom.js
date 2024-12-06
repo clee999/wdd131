@@ -10,3 +10,5 @@ deleteButton.textContent = "❌";
 li.append(deleteButton);
 
 list.append(li);
+
+`Welcome to the ${courseName} ${stuFirstName} !`

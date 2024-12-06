@@ -1,0 +1,252 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Zen+Kaku+Gothic+Antique&display=swap');
+html {
+    background-color: #272636;
+    padding: 1em;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 200px;
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 80px;
+}
+
+p {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    max-width: 100%;
+    font-size: 2em;
+    background-color: #4B83B0;
+    color: white;
+    border-radius: 8px;
+}
+
+header {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     align-items: center;
+     padding: 1em;
+     background-color: #272636;
+ }
+ 
+
+img {
+    border-radius: 8px;
+}
+
+nav {
+     flex: 1;
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+     position: relative;
+ }
+
+
+ nav ul {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 1em;
+     margin: 0;
+     padding: 0;
+     list-style: none;
+ }
+
+ nav ul li {
+     margin: 0.5em 0;
+ }
+ 
+ nav ul a {
+     text-decoration: none;
+     color: white;
+     font-size: 1em;
+     padding: 0.5em 1em;
+     border-radius: 5px;
+ }
+ 
+ nav ul a:hover {
+     background-color: #4B83B0;
+ }
+
+footer {
+    display: grid;
+    align-items: center;
+    list-style: none;
+    grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+}
+
+button {
+    background-color: transparent;
+    color: white;
+    padding: 2em;
+    font-size: 1rem;
+    margin: 20px;
+    transition-duration: 0.4s;
+    border-radius: 8px;
+    border: 2px solid #4B83B0;
+}
+
+button:hover {
+    background-color: #545F82;
+    color: white;
+}
+
+.action {
+    align-items: center;
+}
+
+#copy {
+    font-size: 1em;
+    background-color: transparent;
+}
+
+footer li {
+    font-size: 1em;
+    line-height: 2em;
+}
+
+.logo-box {
+     flex: 0 0 auto; /* Prevents the logo box from stretching */
+ }
+ 
+ .logo-box img {
+     max-width: 100%;
+     height: auto;
+     width: 200px; /* Adjust the size as needed */
+     border-radius: 8px; /* Optional: Adds rounded corners */
+ }     
+
+ 
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 30px;
+}
+
+#section-1, #section-2, #section-3, #section-4 {
+    margin: 0 auto;
+}
+
+.home-headline-1 {
+    text-align: center;
+    background-image: url("https://cdn.glitch.me/3d2da9a8-addb-4fd9-ac2a-a0f2ae505863%2FBackground.jpg?v=1636639438344");
+    color: white;
+    margin-top: 50px;
+    border-radius: 8px;
+}
+
+.home-paragraph-1, .home-paragraph-2 {
+    padding: 1em;
+    line-height: 2em;
+}
+
+.home-right-img, .home-left-img {
+    width: 100%;
+}
+
+.button-container {
+     display: flex;
+     justify-content: center; /* Center horizontally */
+     align-items: center; /* Align vertically */
+     gap: 1em; /* Space between buttons */
+     flex-wrap: wrap; /* Allow wrapping on smaller screens */
+     margin: 1em 0;
+ }
+
+.book-session {
+    padding: 2em 2em;
+  
+}
+
+.book-trainer {
+    padding: 2em 2em;
+}
+
+.social {
+    grid-column: 7 / 8;
+}
+
+
+
+/* General mobile styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+
+    nav ul {
+        grid-template-columns: repeat(auto-fit, minmax(5em, 1fr));
+        margin-left: 20px;
+    }
+
+    .home-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #section-1, #section-2, #section-3, #section-4 {
+        grid-column: 1 / 2;
+    }
+
+    button {
+        padding: 1em;
+    }
+    .button-container {
+     flex-direction: column; /* Stack buttons vertically */
+     gap: 0.5em; /* Reduce gap between buttons */
+     align-items: stretch; /* Ensure buttons align properly */
+     }
+
+     button {
+     width: 100%; /* Full width for buttons on small screens */
+     max-width: 300px; /* Optional: Limit the max width */
+     margin: 0 auto; /* Centre-align buttons */
+     }
+}
+
+
+/* Specific adjustments for very small screens like mobile phones */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    nav ul {
+        grid-template-columns: 1fr;
+        margin-left: 10px;
+    }
+
+    .home-grid {
+        padding: 0 10px;
+    }
+
+    button {
+        padding: 0.8em;
+    }
+}
