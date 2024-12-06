@@ -140,8 +140,8 @@ function filterTemples(criteria) {
             filteredTemples = temples.filter(temple => {
                 const year = parseInt(temple.dedicated.split(",")[0]); // Extract year
                 return year > 2000;
-            });
-            
+          });
+          break;
          case "large":
              filteredTemples = temples.filter(temple => temple.area > 90000);
              break;
