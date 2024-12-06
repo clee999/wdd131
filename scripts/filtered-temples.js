@@ -85,54 +85,69 @@ const temples = [
 
 
      },
+     {
+          templeName: "Independence Temple",
+          location: "Missouri, United States",
+          dedicated: "1831, August, 3",
+          area: 200,
+          imageUrl:
+          "https://churchofjesuschristtemples.org/assets/img/temples/independence-temple/independence-temple-1294-main.jpg"
 
-     // Add more temple objects here...
+
+     }
    ];
 // Function to populate the gallery
 
-function displayTemples(filteredTemples) {
+function displayTemples(filteredTemples){
      const gallery = document.querySelector(".gallery");
-     gallery.innerHTML = ""; // Clear previous content
- 
-     if (filteredTemples.length === 0) {
-         gallery.innerHTML = "<p>No temples match your criteria.</p>";
-         return;
-     }
- 
+     gallery.innerHTML = "";
      filteredTemples.forEach(temple => {
-         const figure = document.createElement("figure");
- 
-         figure.innerHTML = `
-             <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
-             <figcaption>
-                 <strong>${temple.templeName}</strong><br>
-                 ${temple.location}<br>
-                 Dedicated: ${temple.dedicated}<br>
-                 Area: ${temple.area.toLocaleString()} sq ft
-             </figcaption>
-         `;
- 
-         gallery.appendChild(figure);
+          const figure = document.createElement("figure");
+
+          figure.innerHTML = `
+               <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
+               <figcaption>
+                    <strong>${temple.templeName}</strong><br>
+                    ${temple.location}<br>
+                    Dedicated: ${temple.dedicated}<br>
+                    Area: ${temple.area.toLocaleString()} sq ft
+
+               </figcaption>
+
+          `;
+
+          gallery.appendChild(figure);
+          
      });
- }
- 
- function filterTemples(criteria) {
+
+}
+
+// Filter function
+function filterTemples(criteria) {
      let filteredTemples;
  
      switch (criteria) {
          case "old":
-             filteredTemples = temples.filter(temple => new Date(temple.dedicated).getFullYear() < 1900);
-             break;
+           // Temples dedicated before 1900
+           filteredTemples = temples.filter(temple => {
+               const year = parseInt(temple.dedicated.split(",")[0]);
+               return year < 1900;
+           });
+           break;
+
          case "new":
-             filteredTemples = temples.filter(temple => new Date(temple.dedicated).getFullYear() > 2000);
-             break;
+          // Temples dedicated after 2000
+            filteredTemples = temples.filter(temple => {
+                const year = parseInt(temple.dedicated.split(",")[0]); // Extract year
+                return year > 2000;
+            });
+            
          case "large":
              filteredTemples = temples.filter(temple => temple.area > 90000);
              break;
          case "small":
              filteredTemples = temples.filter(temple => temple.area < 10000);
              break;
-         case "home":
          default:
              filteredTemples = temples; // Default to all temples
      }
