@@ -94,6 +94,16 @@ const temples = [
           "https://churchofjesuschristtemples.org/assets/img/temples/independence-temple/independence-temple-1294-main.jpg"
 
 
+     },
+     {
+          templeName: "Preston England Temple",
+          location: "Lancashire, England",
+          dedicated: "1994, June, 12",
+          area: 69630,
+          imageUrl:
+          "https://churchofjesuschristtemples.org/assets/img/temples/preston-england-temple/preston-england-temple-45357-main.jpg"
+
+
      }
    ];
 // Function to populate the gallery
