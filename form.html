@@ -1,47 +1,105 @@
-<!DOCTYPE html>
-<html lang="en-GB">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HTML FORM</title>
-    <link rel="stylesheet" href="styles/form.css">
-    <script src="scripts/form.js" defer></script>
+<!doctype html>
+<html lang="en-US">
+<head>
+  <!-- Meta Charset -->
+  <meta charset="utf-8">
+  
+  <!-- Meta Viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Title -->
+  <title>My Semantic and Well-Structured Page</title>
+  
+  <!-- Meta Description -->
+  <meta name="description" content="A well-structured HTML template example.">
+  
+  <!-- Meta Author -->
+  <meta name="author" content="Your Name">
+  <script src="scripts/#.js" defer></script>
 
-  </head>
-  <body>
-    <a href="fitness.html">Site Plan</a>
-    <h1>Html form</h1>
-    <p>
-      Please Enter <strong>your</strong> details.
-    </p>
-    <div id="feedback"></div>
-    
-    <form action="/my-handling-form-page" method="post">
-      <ul>
-        <li>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="user_name"> 
-        </li>
-        <li>
-          <label for="mail"> E-mail:</label>
-          <input type="email" id="mail" name="user_email">
-        </li>
-        <li>
-          <label for="msg">Message:</label>
-          <textarea id="msg" name="user_message"></textarea>
-        </li>
-        <li class="button">
-          <button type="submit">
-            Send your message
-          </button>
-        
-        </li>
-        
-      </ul>
+  <link rel="stylesheet" href="styles/form.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+
+
+
+</head>
+<body>
+  <!-- Content Goes Here -->
+  <header>
+
+    <h1>Product Review</h1>
+  </header>
   
-    </form>
-   
+  <main>
+    <section>
+     <form action="review.html" method="get">
+          
+          <label for="product-select">Product Names </label>
+          <select id="product-select" name="product-name" required>
+               <option value="" disabled selected> Select a Product...</option>
+          </select>
+
+          <fieldset>
+                <!-- Overall Rating -->
+               <fieldset>
+                    <legend>Overall Rating:</legend>
+                    <label for="star1">
+                    <input type="radio" id="star1" name="rating" value="1" required> ⭐️
+                    </label>
+                    <label for="star2">
+                    <input type="radio" id="star2" name="rating" value="2"> ⭐️⭐️
+                    </label>
+                    <label for="star3">
+                    <input type="radio" id="star3" name="rating" value="3"> ⭐️⭐️⭐️
+                    </label>
+                    <label for="star4">
+                    <input type="radio" id="star4" name="rating" value="4"> ⭐️⭐️⭐️⭐️
+                    </label>
+                    <label for="star5">
+                    <input type="radio" id="star5" name="rating" value="5"> ⭐️⭐️⭐️⭐️⭐️
+                    </label>
+               </fieldset>
+
+               <!-- Date of Installation -->
+               <label for="install-date">Date of Installation:</label>
+               <input type="date" id="install-date" name="install-date" required>
+
+               <!-- Useful Features -->
+               <fieldset>
+                    <legend>Useful Features (Check all that apply):</legend>
+                    <label for="feature1">
+                    <input type="checkbox" id="feature1" name="features" value="Feature A"> Feature A
+                    </label>
+                    <label for="feature2">
+                    <input type="checkbox" id="feature2" name="features" value="Feature B"> Feature B
+                    </label>
+                    <label for="feature3">
+                    <input type="checkbox" id="feature3" name="features" value="Feature C"> Feature C
+                    </label>
+               </fieldset>
+
+               <!-- Written Review -->
+               <label for="written-review">Written Review:</label>
+               <textarea id="written-review" name="written-review" rows="4" cols="50"></textarea>
+
+               <!-- User Name -->
+               <label for="user-name">Your Name:</label>
+               <input type="text" id="user-name" name="user-name">
+
+               <!-- Submit Button -->
+               <input type="submit" value="Submit Review">
+
+          </fielset>
+     </form>
+
+    </section>
+  </main>
   
-  
-  </body> 
+  <footer>
+     <p>&copy; <span id="currentyear"></span> Carl Lee - United Kingdom</p>
+     <p id="lastModified"></p>  </footer>
+</body>
 </html>
