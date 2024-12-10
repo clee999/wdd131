@@ -1,16 +1,50 @@
-// get the feedback div element so we can do something with it/
+// Display current year
+document.getElementById('currentyear').textContent = new Date().getFullYear();
+  
+// Display last modified date
+document.getElementById('lastModified').textContent = "Last Modification: " + document.lastModified;
+  
+  
+  
+  // Product Array
 
-const feedbackElement = document.getElementById('feedback');
-// get the form so we can read what was entered in it.
-const formElement = document.forms[0];
-// add a 'listener' to wait for a submission of our form. When that happens run the code below.
-formElement.addEventListener('submit', function(e) {
-    // stop the form from doing the default action
-    e.preventDefault();
-    // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
-    feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
-    // make the feedback element visible.
-    feedbackElement.style.display = "block";
-    // add a class to move everything down so our message doesn't cover it.
-    document.body.classList.toggle('moveDown');
-});
+const products = [
+{
+     id: "fc-1888",
+     name: "flux capacitor",
+     averagerating: 4.5
+},
+{
+     id: "fc-2050",
+     name: "power laces",
+     averagerating: 4.7
+},
+{
+     id: "fs-1987",
+     name: "time circuits",
+     averagerating: 3.5
+},
+{
+     id: "ac-2000",
+     name: "low voltage reactor",
+     averagerating: 3.9
+},
+{
+     id: "jj-1969",
+     name: "warp equalizer",
+     averagerating: 5.0
+}
+];
+
+     
+
+     // Populate the Product Name select element
+const productSelect = document.getElementById("product-select");
+
+products.forEach(product => {
+          const option = document.createElement("option");
+          option.value = product.id;
+          option.textContent = product.name;
+          productSelect.appendChild(option);
+     });
+
