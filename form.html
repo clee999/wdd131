@@ -41,27 +41,30 @@
       <!-- Overall Rating -->
       <fieldset>
         <legend>Overall Rating:</legend>
-        <label for="star1">
-          ⭐️ <input type="radio" id="star1" name="rating" value="1" required>
-        </label>
-        <label for="star2">
-          ⭐️⭐️ <input type="radio" id="star2" name="rating" value="2"> 
-        </label>
-        <label for="star3">
-          ⭐️⭐️⭐️ <input type="radio" id="star3" name="rating" value="3"> 
-        </label>
-        <label for="star4">
-          ⭐️⭐️⭐️⭐️ <input type="radio" id="star4" name="rating" value="4"> 
-        </label>
-        <label for="star5">
-          ⭐️⭐️⭐️⭐️⭐️ <input type="radio" id="star5" name="rating" value="5"> 
-        </label>
+        <div class="rating-container">
+          <label for="star1">
+               ⭐️ <input type="radio" id="star1" name="rating" value="1" required>
+          </label>
+          <label for="star2">
+               ⭐️⭐️ <input type="radio" id="star2" name="rating" value="2"> 
+          </label>
+          <label for="star3">
+               ⭐️⭐️⭐️ <input type="radio" id="star3" name="rating" value="3"> 
+          </label>
+          <label for="star4">
+               ⭐️⭐️⭐️⭐️ <input type="radio" id="star4" name="rating" value="4"> 
+          </label>
+          <label for="star5">
+               ⭐️⭐️⭐️⭐️⭐️<input type="radio" id="star5" name="rating" value="5"> 
+          </label>
+        </div>
       </fieldset>
 
       <!-- Date of Installation -->
-      <label for="install-date">Date of Installation:</label>
-      <input type="date" id="install-date" name="install-date" required>
-
+       <div class="container">
+          <label for="install-date">Date of Installation:</label>
+          <input type="date" id="install-date" name="install-date" required>
+       </div >
       <!-- Useful Features -->
       <fieldset class="features">
         <legend>Which features did you find Useful? <br><i>(Check all that apply):</i></legend>
@@ -80,13 +83,15 @@
       </fieldset>
 
       <!-- Written Review -->
-      <label for="written-review">Written Review:</label>
-      <textarea id="written-review" name="written-review" rows="4" cols="50"></textarea>
-
+      <div class="container">
+          <label for="written-review">Written Review:</label>
+          <textarea id="written-review" name="written-review" rows="4" cols="50"></textarea>
+     </div>
       <!-- User Name -->
-      <label for="user-name">Your Name:</label>
-      <input type="text" id="user-name" name="user-name">
-
+      <div class="container">
+          <label for="user-name">Your Name:</label>
+          <input type="text" id="user-name" name="user-name">
+      </div>
       <!-- Submit Button -->
       <input type="submit" value="Post Review">
     </form>

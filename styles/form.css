@@ -57,11 +57,17 @@ body {
 
  }
 
- label {
-     display: inline-block; 
-     margin-right: 10px;
+ .container {
+     padding-right: 1rem;
    }
 
+
+
+
+
+ label {
+     display: inline-block; 
+   }
 
 
 
