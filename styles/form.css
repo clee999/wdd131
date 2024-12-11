@@ -50,16 +50,34 @@ body {
      border: 1px solid #ccc;
      border-radius: 4px;
  }
+
+ input[type="radio"] {
+     display: inline-block;
+     margin-right: 10px;
+
+ }
+
+ label {
+     display: inline-block; 
+     margin-right: 10px;
+   }
+
+
+.features {
+     padding-top:2rem; 
+}
+
  
  input[type="radio"],
  input[type="checkbox"] {
-     width: auto;
+
      margin-right: 10px;
  }
  
  fieldset {
      border: none;
      margin-bottom: 15px;
+
  }
  
  input[type="submit"] {
