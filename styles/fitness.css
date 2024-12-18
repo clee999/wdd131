@@ -305,16 +305,7 @@ figure img {
     margin-top: 1em;
   }
   
-  button {
-    padding: 0.8em 2em;
-    background-color: #4b83b0;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-    transition: background-color 0.4s;
-  }
+
   
   button#cancel-button {
     background-color: #ccc;
