@@ -127,10 +127,6 @@ button {
 }
 
 
-button:hover {
-    background-color: #33c020;
-    color: white;
-}
 
 /* Logo Box */
 .logo-box {
@@ -207,6 +203,9 @@ h2.session-headline{
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow */
 }
 
+li.button button:hover {
+    background-color: #545f82; 
+  }
 
 form {
     display: flex;
@@ -304,8 +303,16 @@ figure img {
     gap: 1.5em;
     margin-top: 1em;
   }
-  
-
+  button {
+    padding: 0.8em 2em;
+    background-color: #4b83b0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.4s;
+  }
   
   button#cancel-button {
     background-color: #ccc;
@@ -315,7 +322,9 @@ figure img {
   button:hover {
     background-color: #545f82;
   }
+  
 
+  
 /* Button Container */
 .button-container {
     display: flex;
